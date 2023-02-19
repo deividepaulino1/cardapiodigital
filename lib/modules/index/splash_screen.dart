@@ -1,8 +1,9 @@
-import 'package:cardapio/shared/custom_colors/colors.dart';
 import 'package:flutter/material.dart';
 
-class MainPage extends StatelessWidget {
-  const MainPage({super.key});
+import '../../shared/custom_colors/colors.dart';
+
+class SplashScreen extends StatelessWidget {
+  const SplashScreen({super.key});
 
   @override
   Widget build(BuildContext context) {

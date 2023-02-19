@@ -1,5 +1,6 @@
 import 'package:cardapio/modules/home_page/pages/home_page.dart';
-import 'package:cardapio/modules/main_page/main_page.dart';
+import 'package:cardapio/modules/index/index_page.dart';
+import 'package:cardapio/modules/index/splash_screen.dart';
 import 'package:cardapio/shared/custom_colors/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
@@ -23,9 +24,9 @@ class MenuDigi extends StatelessWidget {
                 primarySwatch: DigiColors.themePrimary,
               ),
               debugShowCheckedModeBanner: false,
-              home: const MainPage(),
+              home: const IndexPage(),
               routes: {
-                '/main/': (context) => const MainPage(),
+                '/main/': (context) => const SplashScreen(),
                 '/home/': (context) => const HomePage(),
               },
             );

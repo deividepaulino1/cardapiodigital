@@ -1,11 +1,9 @@
 import 'package:cardapio/modules/home_page/widgets/carrossel_widget.dart';
 import 'package:cardapio/modules/home_page/widgets/item_card_widget.dart';
-import 'package:cardapio/shared/app_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
 import '../../../shared/custom_colors/colors.dart';
-import '../widgets/sugestoes_widget.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -18,13 +16,12 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      bottomNavigationBar: const CustomBottomBar(),
       backgroundColor: DigiColors.background,
       body: Center(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            CarrosselSlider(),
+            const CarrosselSlider(),
             SizedBox(height: 2.h),
             Padding(
               padding: EdgeInsets.only(top: 2.h, left: 5.w),

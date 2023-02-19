@@ -2,21 +2,19 @@ import 'package:cardapio/shared/custom_colors/colors.dart';
 import 'package:flutter/material.dart';
 
 class CustomBottomBar extends StatefulWidget {
-  const CustomBottomBar({Key? key}) : super(key: key);
+  int index;
+  void Function(int)? onTap;
+  CustomBottomBar({
+    Key? key,
+    required this.index,
+    required this.onTap,
+  }) : super(key: key);
 
   @override
   State<StatefulWidget> createState() => CustomBottomBarState();
 }
 
 class CustomBottomBarState extends State<CustomBottomBar> {
-  int _selectedIndex = 0;
-
-  void _onItemTapped(int index) {
-    setState(() {
-      _selectedIndex = index;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
@@ -49,8 +47,8 @@ class CustomBottomBarState extends State<CustomBottomBar> {
           label: 'Settings',
         ),
       ],
-      currentIndex: _selectedIndex,
-      onTap: _onItemTapped,
+      currentIndex: widget.index,
+      onTap: widget.onTap,
     );
   }
 }
