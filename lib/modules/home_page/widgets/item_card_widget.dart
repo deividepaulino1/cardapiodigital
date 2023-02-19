@@ -38,14 +38,14 @@ class _ItemCardWidgetState extends State<ItemCardWidget> {
           ),
           SizedBox(height: 2.0.h),
           Padding(
-            padding: EdgeInsets.only(right: 10.0.w),
+            padding: EdgeInsets.only(right: 1.w),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 Text(
                   'Nome do produto',
                   style: TextStyle(
-                    fontSize: 3.5.w,
+                    fontSize: 3.2.w,
                     fontWeight: FontWeight.bold,
                   ),
                 ),
@@ -61,11 +61,11 @@ class _ItemCardWidgetState extends State<ItemCardWidget> {
                         color: Colors.grey.shade600,
                       ),
                     ),
-                    SizedBox(width: 5.0.w),
+                    SizedBox(width: 2.0.w),
                     Text(
                       'R\$ 10,00',
                       style: TextStyle(
-                        fontSize: 3.0.w,
+                        fontSize: 3.5.w,
                         fontWeight: FontWeight.bold,
                         color: Colors.green,
                       ),
