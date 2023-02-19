@@ -1,3 +1,5 @@
+// ignore_for_file: no_leading_underscores_for_local_identifiers
+
 import 'package:cardapio/modules/cart_page/pages/cart_page.dart';
 import 'package:cardapio/modules/home_page/pages/home_page.dart';
 import 'package:cardapio/shared/app_bar.dart';

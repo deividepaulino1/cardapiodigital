@@ -1,3 +1,5 @@
+// ignore_for_file: use_key_in_widget_constructors
+
 import 'package:cardapio/modules/home_page/widgets/sugestoes_widget.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
@@ -14,7 +16,7 @@ class _CarrosselSliderState extends State<CarrosselSlider> {
   @override
   Widget build(BuildContext context) {
     return CarouselSlider(
-      items: [
+      items: const [
         // Lista de widgets a serem exibidos no carrossel
         SugestoesWidget(),
         SugestoesWidget(),

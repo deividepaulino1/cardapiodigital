@@ -44,7 +44,7 @@ class _SugestoesWidgetState extends State<SugestoesWidget> {
                   padding: EdgeInsets.all(5.w),
                   child: CircleAvatar(
                     radius: 10.h,
-                    backgroundImage: NetworkImage(
+                    backgroundImage: const NetworkImage(
                         'https://cdn.jornaldebrasilia.com.br/wp-content/uploads/2022/05/26154451/burguer2.jpg'),
                   ),
                 ),
@@ -63,7 +63,7 @@ class _SugestoesWidgetState extends State<SugestoesWidget> {
                       SizedBox(
                         height: 1.5.h,
                       ),
-                      Container(
+                      SizedBox(
                         width: 45.w,
                         height: 15.h,
                         child: Text(

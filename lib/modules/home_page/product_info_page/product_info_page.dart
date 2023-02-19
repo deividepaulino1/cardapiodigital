@@ -143,10 +143,11 @@ class _ProductInfoPageState extends State<ProductInfoPage> {
                   ],
                 ),
               ),
-              Container(
+              SizedBox(
                   height: 5.h,
                   width: 50.w,
-                  child: DigiButton(onPressed: () {}, child: Text('Adicionar')))
+                  child: DigiButton(
+                      onPressed: () {}, child: const Text('Adicionar')))
             ],
           ),
         ),

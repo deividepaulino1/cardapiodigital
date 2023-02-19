@@ -17,7 +17,7 @@ class SplashScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Container(
+              SizedBox(
                 width: 250,
                 child: Image.asset('lib/assets/logotipo-branco.png'),
               ),

@@ -20,7 +20,7 @@ class _ItemCardWidgetState extends State<ItemCardWidget> {
               borderRadius: BorderRadius.circular(10.sp),
             ),
             context: context,
-            builder: (context) => ProductInfoPage());
+            builder: (context) => const ProductInfoPage());
       },
       child: Column(
         children: [
