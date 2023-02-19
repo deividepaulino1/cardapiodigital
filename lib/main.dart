@@ -5,6 +5,9 @@ import 'package:cardapio/shared/custom_colors/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
 
+import 'modules/cart_page/pages/cart_page.dart';
+import 'modules/pedido_page/pages/pedido_page.dart';
+
 void main() {
   runApp(const MenuDigi());
 }
@@ -28,6 +31,8 @@ class MenuDigi extends StatelessWidget {
               routes: {
                 '/main/': (context) => const SplashScreen(),
                 '/home/': (context) => const HomePage(),
+                '/carrinho/': (context) => const CarrinhoPage(),
+                '/pedido/': (context) => const PedidosPage(),
               },
             );
           },

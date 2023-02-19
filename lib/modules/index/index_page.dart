@@ -3,6 +3,8 @@ import 'package:cardapio/modules/home_page/pages/home_page.dart';
 import 'package:cardapio/shared/app_bar.dart';
 import 'package:flutter/material.dart';
 
+import '../pedido_page/pages/pedido_page.dart';
+
 class IndexPage extends StatefulWidget {
   const IndexPage({super.key});
 
@@ -10,7 +12,7 @@ class IndexPage extends StatefulWidget {
   State<IndexPage> createState() => _IndexPageState();
 }
 
-int _selectedIndex = 0;
+int _selectedIndex = 2;
 
 class _IndexPageState extends State<IndexPage> {
   @override
@@ -18,7 +20,7 @@ class _IndexPageState extends State<IndexPage> {
     final pages = [
       const CarrinhoPage(),
       const HomePage(),
-      const Center(child: Text('Settings')),
+      const PedidosPage(),
     ];
 
     void _onItemTapped(int index) {

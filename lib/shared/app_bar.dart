@@ -39,12 +39,12 @@ class CustomBottomBarState extends State<CustomBottomBar> {
           label: 'Carrinho',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.home),
-          label: 'Home',
+          icon: Icon(Icons.restaurant_menu),
+          label: 'Cardápio',
         ),
         BottomNavigationBarItem(
-          icon: Icon(Icons.settings),
-          label: 'Settings',
+          icon: Icon(Icons.receipt),
+          label: 'Meus pedidos',
         ),
       ],
       currentIndex: widget.index,
