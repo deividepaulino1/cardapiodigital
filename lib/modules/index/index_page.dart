@@ -14,7 +14,7 @@ class IndexPage extends StatefulWidget {
   State<IndexPage> createState() => _IndexPageState();
 }
 
-int _selectedIndex = 2;
+int _selectedIndex = 1;
 
 class _IndexPageState extends State<IndexPage> {
   @override

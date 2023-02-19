@@ -27,10 +27,10 @@ class MenuDigi extends StatelessWidget {
                 primarySwatch: DigiColors.themePrimary,
               ),
               debugShowCheckedModeBanner: false,
-              home: const IndexPage(),
+              home: const SplashScreen(),
               routes: {
                 '/main/': (context) => const SplashScreen(),
-                '/home/': (context) => const HomePage(),
+                '/home/': (context) => const IndexPage(),
                 '/carrinho/': (context) => const CarrinhoPage(),
                 '/pedido/': (context) => const PedidosPage(),
               },

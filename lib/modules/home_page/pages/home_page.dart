@@ -1,6 +1,7 @@
 // ignore_for_file: library_private_types_in_public_api
 
 import 'package:cardapio/modules/home_page/widgets/carrossel_widget.dart';
+import 'package:cardapio/modules/home_page/widgets/categorias_widget.dart';
 import 'package:cardapio/modules/home_page/widgets/item_card_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:sizer/sizer.dart';
@@ -25,6 +26,7 @@ class _HomePageState extends State<HomePage> {
           children: [
             const CarrosselSlider(),
             SizedBox(height: 2.h),
+            CategoriasWidget(),
             Padding(
               padding: EdgeInsets.only(top: 2.h, left: 5.w),
               child: Text(
